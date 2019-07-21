@@ -29,7 +29,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 Run
 - `npm install -g firebase-tools`
 - `firebase login` 
-- `firebase init` (after to build the project (`ng build`), select `Hosting: Configure and deploy Firebase Hosting sites` option and use `dist/my-store` path)
+- `firebase init` (after to build the project (`ng build --prod`), select `Hosting: Configure and deploy Firebase Hosting sites` option and use `dist/my-store` path)
 - `firebase deploy`
 
 Go to [My Store](https://food-delivery-mmxqxb.web.app/)
