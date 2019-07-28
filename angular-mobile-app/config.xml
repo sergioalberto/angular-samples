@@ -2,11 +2,11 @@
 <widget id="com.example.angularMobileApp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>TestApp</name>
     <description>
-        A sample angular project converted to mobile app using Cordova.
-    </description>
-    <author email="sergioalbertogq@gmail.com" href="http://rad5.com.ng">
-        John Nnanna
-    </author>
+    A sample angular project converted to mobile app using Cordova.
+  </description>
+    <author email="sergioalbertogq@gmail.com" href="https://sergioalbertogq.blogspot.com/">
+    Sergio GQ
+  </author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />

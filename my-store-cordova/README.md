@@ -1,13 +1,14 @@
-# MyStore
+# Add Device Platform
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
+Run `cordova platform add android [any of your choice]` 
+
+# AngularApp
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.1.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-Example:
-![Alt text](src/assets/my-store.png?raw=true "My Store")
 
 ## Code scaffolding
 
@@ -25,28 +26,27 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Deploy on Firebase
-Run
-- `npm install -g firebase-tools`
-- `firebase login` 
-- `firebase init` (after to build the project (`ng build --prod`), select `Hosting: Configure and deploy Firebase Hosting sites` option and use `dist/my-store` path)
-- `firebase deploy`
-
-Go to [My Store](https://food-delivery-mmxqxb.web.app/)
-
 ## Cordova with Docker
 - `sudo docker build -t cordova .`
 - `sudo docker run -ti --name=cordova -v $(pwd):/workspace --privileged --net host -v /dev/bus/usb:/dev/bus/usb cordova`
 
 ## Run Cordova in the Docker container
-- `cordova create mobile sergiogq.myStore MyStore`
-- `cd mobile`
-- `rm -rf www`
-- `ln -s ../dist/my-store-cordova/ www`
-- `cordova platform add android`
+- `npm run build`
+- `cordova platform add android@6.4.0`
+
+```bash
+android update sdk --no-ui --filter build-tools-26.0.0,android-26,extra-android-m2repository
+android update sdk --no-ui --all --filter platform-tools,android-26,extra-android-m2repository
+sdkmanager --update
+```
 - `cordova build android` 
 - `cordova run android`
+
+Example:
+![Alt text](src/assets/my-store.jpeg?raw=true "My App")
 
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# AngularToMobileProject
+A demo project to convert Angular Project to Mobile App using Cordova
